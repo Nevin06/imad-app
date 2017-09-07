@@ -5,24 +5,41 @@ var path = require('path');
 var app = express();
 app.use(morgan('combined'));
 
-var articleOne = { 
-    title: 'Article One | Thomas Nevin K',
-    heading: 'Article One',
-    date: 'Sept 7 2017',
-    content:`            <p>
-                This is the content of my first article.This is the content of my first article.This is the content of my first article.
+var articles : {
+        var articleOne : { 
+            title: 'Article One | Thomas Nevin K',
+            heading: 'Article One',
+            date: 'Sept 7 2017',
+            content:`            <p>
                         This is the content of my first article.This is the content of my first article.This is the content of my first article.
-            </p>
-            <p>
-                This is the content of my first article.This is the content of my first article.This is the content of my first article.
+                                This is the content of my first article.This is the content of my first article.This is the content of my first article.
+                    </p>
+                    <p>
                         This is the content of my first article.This is the content of my first article.This is the content of my first article.
-            </p>
-            <p>
-                This is the content of my first article.This is the content of my first article.This is the content of my first article.
+                                This is the content of my first article.This is the content of my first article.This is the content of my first article.
+                    </p>
+                    <p>
                         This is the content of my first article.This is the content of my first article.This is the content of my first article.
-            </p>`
+                                This is the content of my first article.This is the content of my first article.This is the content of my first article.
+                    </p>`
+        },
+        var articleTwo : { 
+            title: 'Article Two | Thomas Nevin K',
+            heading: 'Article Two',
+            date: 'Sept 7 2017',
+            content:`<p>
+                        This is the content of my second article.
+                    </p>`
+        },
+        var articleThree : {
+            title: 'Article Three | Thomas Nevin K',
+            heading: 'Article Three',
+            date: 'Sept 7 2017',
+            content:`<p>
+                        This is the content of my third article.
+                    </p>`
+        }
 };
-
 function createTemplate(data) {
     var title = data.title;
     var date = data.date;
