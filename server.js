@@ -22,7 +22,7 @@ var articles = {
                         This is the content of my first article.This is the content of my first article.This is the content of my first article.
                                 This is the content of my first article.This is the content of my first article.This is the content of my first article.
                     </p>`
-        },
+            },
         var 'article-two' : { 
             title: 'Article Two | Thomas Nevin K',
             heading: 'Article Two',
@@ -30,7 +30,7 @@ var articles = {
             content:`<p>
                         This is the content of my second article.
                     </p>`
-        },
+            },
         var 'article-three' : {
             title: 'Article Three | Thomas Nevin K',
             heading: 'Article Three',
@@ -38,7 +38,7 @@ var articles = {
             content:`<p>
                         This is the content of my third article.
                     </p>`
-        }
+            }
 };
 function createTemplate(data) {
     var title = data.title;
