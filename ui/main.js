@@ -89,6 +89,6 @@ submit.onclick = function () {
     };
     
         //Make the request
-    request.open('GET','http://thomasnevink.imad.hasura-app.io/counter',true);
+    request.open('GET','http://thomasnevink.imad.hasura-app.io/submit-name?name=' + namE,true);
     request.send(null);
 };
