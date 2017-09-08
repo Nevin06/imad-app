@@ -61,8 +61,7 @@ button.onclick = function () {
 
 
 //Submit name
-var nameInput = document.getElementById('name');
-var namE = nameInput.value;
+
 var submit = document.getElementById('submit_btn');
 submit.onclick = function () {
     //Make a request to the server and send the name 
@@ -90,6 +89,8 @@ submit.onclick = function () {
     };
     
         //Make the request
+    var nameInput = document.getElementById('name');
+    var namE = nameInput.value;
     request.open('GET','http://thomasnevink.imad.hasura-app.io/submit-name?name=' + namE,true);
     request.send(null);
 };
